@@ -1,1 +1,30 @@
 @import url('./other-file.css');
+
+.common {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    min-width: 300px;
+    min-height: 50px;
+    margin: 5px;
+    padding: 5px;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.section-list-screen {
+    min-width: 600px;
+
+}
+
+.footer {
+    text-align: center;
+}

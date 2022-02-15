@@ -9,8 +9,52 @@
     <link href="./client/styles/index.css" rel="stylesheet" />
   </head>
   <body>
-    <div id="root"></div>
+    <div class="header common">
+      <h1>My Favorite Books</h1>
+      <h3>
+        <p>
+          Oh my lovely books are here... <br>
+          I can share them now with my friends <br>
+        </p>
+      </h3>
+    </div>
+    <div class="main common" id="root">
+      <div class="add-remove-section">
+        <div class="section-add common" id="addBooks">
+          <h4>Add your Favorite Books to your list</h4>
+          <form action="">
+              <label for="bookName">Book Title:</label><br>
+              <input type="text" id="bookName" name="bookName" placeholder="Your favorite book"><br>
+              <label for="author">Author:</label><br>
+              <input type="text" id="author" name="author" placeholder="Author"><br><br>
+              <label for="description">Description:</label><br>
+              <textarea id="description" name="description" placeholder="Short description of the book" 
+                 rows="4" cols="50"></textarea><br>
+              <input type="button" id="submitBtnAdd" value="Add">
+              <p id="invalidEntryAdd"></p>
+          </form>
+        </div>
+        <div class="section-remove common" id="removeBooks">
+          <form action="">
+              <label for="bookNameRemove">Book Title:</label><br>
+              <input type="text" id="bookNameRemove" name="bookNameRemove" placeholder="Book title">
+              <br><br>
+              <input type="button" id="submitBtnRemove" value="Remove">
+              <p id="invalidEntryRemove"></p>
+          </form>    
+        </div>
+      </div>
+      <div class="section-list-screen common" id="displayScreen">
 
+      </div>
+      
+    </div>
+    <div class="footer common">
+      <h4>
+        Developed by Mervat, Hans and Ömer<br>
+        Copyright @2022
+      </h4>
+    </div>
     <script type="module" src="./client/src/init/index.js"></script>
   </body>
 </html>
