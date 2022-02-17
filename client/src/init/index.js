@@ -1,18 +1,13 @@
-
-
+/* eslint-disable folders/match-regex */
 import { listenerLoad } from '../listeners/listenerLoad.js';
 import { listenerAdd } from '../listeners/listenerAdd.js';
 import { listenerRemove } from '../listeners/listenerRemove.js';
 
-
 listenerLoad();
-listenerAdd("submitBtnAdd");
-listenerRemove("submitBtnRemove");
-
-
+listenerAdd('submitBtnAdd');
+listenerRemove('submitBtnRemove');
 
 /*
-
 const data = {
     books: [{bookTitle: "War and Peace", author: "Leo Tolstoy", description: "War and Peace is a vast epic centred on Napoleon's war with Russia. While it expresses Tolstoy's view that history is an inexorable process which man cannot influence, he peoples his great novel with a cast of over five hundred characters. Three of these, the artless and delightful Natasha Rostov, the world-weary Prince Andrew Bolkonsky and the idealistic Pierre Bezukhov illustrate Tolstoy's philosophy in this novel of unquestioned mastery. "}]
 };
@@ -103,4 +98,3 @@ document.getElementById("submitBtnRemove").addEventListener("click", handlerRemo
 // see updated data in console
 //console.log(data.books);
 */
-console.log(data.books);
