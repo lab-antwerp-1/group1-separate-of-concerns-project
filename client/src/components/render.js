@@ -1,8 +1,9 @@
+/* eslint-disable folders/match-regex */
 export const renderList = (array = []) => {
-    const ol = document.createElement('ol');
-    for (let object of array) {
-      const li = document.createElement('li');
-      li.innerHTML = `<div>
+  const ol = document.createElement('ol');
+  for (const object of array) {
+    const li = document.createElement('li');
+    li.innerHTML = `<div>
                         <h4>Book Title:</h4>
                         <p> ${object.bookTitle}\n</p>
                     </div>
@@ -14,7 +15,7 @@ export const renderList = (array = []) => {
                         <h4>Description:</h4>
                         <p> ${object.description}\n</p>
                     </div>`;
-      ol.appendChild(li);
-    }
-    return ol;
+    ol.appendChild(li);
+  }
+  return ol;
 };
