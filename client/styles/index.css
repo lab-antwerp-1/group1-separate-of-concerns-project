@@ -21,10 +21,85 @@
     justify-content: space-around;
 }
 .section-list-screen {
-    min-width: 600px;
-
+    min-width: 400px;
 }
-
+.btn {
+    background-color: black;
+    color: white;
+}
+.btn:hover {
+    background-color: rgb(180, 36, 36);
+    color: rgb(248, 245, 245);
+}
+#description {
+    width: 280px;
+    height: 60px;
+    resize: none;
+}
 .footer {
     text-align: center;
+}
+@media screen and (max-width: 900px) {
+    .common {
+        min-width: 60px;
+    }
+    .header {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .section-list-screen {
+        min-width: 80px;
+    }
+    #description {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .common {
+        min-width: 60px;
+    }
+    .add-remove-section{
+        text-align: center;
+    }
+    .header {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size:smaller;
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+    .section-list-screen {
+        min-width: 80px;
+    }
+    #description {
+        width: 220px;
+    }
+}
+@media screen and (max-width: 300px) {
+    .common {
+        min-width: 60px;
+    }
+    .add-remove-section{
+        text-align: center;
+    }
+    .header {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: x-small;
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+    .section-list-screen {
+        min-width: 80px;
+    }
+    #description {
+        width: 160px;
+    }
 }
