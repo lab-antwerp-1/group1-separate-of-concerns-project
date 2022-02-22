@@ -12,8 +12,8 @@ export const renderList = (array = []) => {
                         <p> ${object.author}\n</p>
                     </div>
                     <div>
-                        <h4>Description:</h4>
-                        <p> ${object.description}\n</p>
+                        <h4>Summary:</h4>
+                        <p> ${object.summary}\n</p>
                     </div>`;
     ol.appendChild(li);
   }

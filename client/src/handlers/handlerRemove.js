@@ -4,13 +4,13 @@
 /* eslint-disable folders/match-regex */
 import { data } from '../data.js';
 import { renderList } from '../components/render.js';
-import { isBookInTheList } from '../logic/isBookInTheList.js';
+import { isBookNotInTheList } from '../logic/isBookNotInTheList.js';
 
 export const handlerRemove = () => {
   const removeBook = document.getElementById('bookNameRemove').value; // get Book Title info (to remove) from <input> using ID
 
   // check data file whether given book name is available in the data
-  if (isBookInTheList(data.books, removeBook)) {
+  if (isBookNotInTheList(data.books, removeBook)) {
     document.getElementById('invalidEntryRemove').innerHTML =
       "You don't have this book in your list!";
   }
