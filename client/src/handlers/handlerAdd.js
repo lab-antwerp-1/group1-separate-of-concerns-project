@@ -9,22 +9,23 @@ import { validityCheck } from '../logic/validityCheck.js';
 export const handlerAdd = () => {
   const bookNameInput = document.getElementById('bookName').value; // get Book Title info from <input> using ID
   const authorInput = document.getElementById('author').value; // get Author info from <input> tag using ID
-  const descriptionInput = document.getElementById('description').value; // get Description info from <textarea> using ID
+  const summaryInput = document.getElementById('summary').value; // get Summary info from <textarea> using ID
 
-  // check whether user input at least 2 characters, if user input is less than 2 characters, warning appears
+  // check whether user input at least 2 characters,
+  // if user input is less than 2 characters, warning appears
   const validInput = 'Enter a valid input!';
   if (validityCheck(bookNameInput))
     document.getElementById('invalidEntryAdd').innerHTML = validInput;
   if (validityCheck(authorInput))
     document.getElementById('invalidEntryAdd').innerHTML = validInput;
-  if (validityCheck(descriptionInput))
+  if (validityCheck(summaryInput))
     document.getElementById('invalidEntryAdd').innerHTML = validInput;
 
-  // push user input (as object {bookTitle:" ",author:" ",description: " "}) into data.books array (books is an array in data object)
+  // push user input (as object {bookTitle:" ",author:" ",summary: " "}) into data.books array (books is an array in data object)
   data.books.push({
     bookTitle: bookNameInput,
     author: authorInput,
-    description: descriptionInput,
+    summary: summaryInput,
   });
 
   const newList = renderList(data.books); // run renderList() function to receive updated list and assign it to newList variable
