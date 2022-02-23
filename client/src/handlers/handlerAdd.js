@@ -5,6 +5,8 @@
 import { data } from '../data.js';
 import { renderList } from '../components/render.js';
 import { validityCheck } from '../logic/validityCheck.js';
+import { formatWords } from '../logic/formatWords.js';
+import { formatSentence } from '../logic/formatSentence.js';
 
 export const handlerAdd = () => {
   const bookNameInput = document.getElementById('bookName').value; // get Book Title info from <input> using ID
@@ -13,19 +15,27 @@ export const handlerAdd = () => {
 
   // check whether user input at least 2 characters,
   // if user input is less than 2 characters, warning appears
-  const validInput = 'Enter a valid input!';
-  if (validityCheck(bookNameInput))
-    document.getElementById('invalidEntryAdd').innerHTML = validInput;
-  if (validityCheck(authorInput))
-    document.getElementById('invalidEntryAdd').innerHTML = validInput;
-  if (validityCheck(summaryInput))
-    document.getElementById('invalidEntryAdd').innerHTML = validInput;
+  if (validityCheck(bookNameInput)) {
+    document.getElementById('invalidEntryAdd').innerHTML =
+      'Enter a valid Book Title!';
+    return;
+  }
+  if (validityCheck(authorInput)) {
+    document.getElementById('invalidEntryAdd').innerHTML =
+      'Enter a valid Author name!';
+    return;
+  }
+  if (validityCheck(summaryInput)) {
+    document.getElementById('invalidEntryAdd').innerHTML =
+      'Enter a valid Summary!';
+    return;
+  }
 
   // push user input (as object {bookTitle:" ",author:" ",summary: " "}) into data.books array (books is an array in data object)
   data.books.push({
-    bookTitle: bookNameInput,
-    author: authorInput,
-    summary: summaryInput,
+    bookTitle: formatWords(bookNameInput),
+    author: formatWords(authorInput),
+    summary: formatSentence(summaryInput),
   });
 
   const newList = renderList(data.books); // run renderList() function to receive updated list and assign it to newList variable
