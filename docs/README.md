@@ -29,11 +29,10 @@
     - [listenerLoad.js](#clientsrclistenerslistenerLoadjs)
     - [listenerRemove.js](#clientsrclistenerslistenerRemovejs)
   - logic
-    - [isBookInTheList.js](#clientsrclogicisBookInTheListjs)
+    - [isBookNotInTheList.js](#clientsrclogicisBookNotInTheListjs)
     - [validityCheck.js](#clientsrclogicvalidityCheckjs)
   - [data.js](#clientsrcdatajs)
 - styles
-- [data.js](#clientdatajs)
 
 ---
 
@@ -97,11 +96,38 @@
 
 ## /logic
 
-<details><summary><a href="../../client/src/logic/isBookInTheList.js" id="clientsrclogicisBookInTheListjs">../client/src/logic/isBookInTheList.js</a></summary>
+<details><summary><a href="../../client/src/logic/isBookNotInTheList.js" id="clientsrclogicisBookNotInTheListjs">../client/src/logic/isBookNotInTheList.js</a></summary>
+
+<a name="isBookNotInTheList"></a>
+
+## isBookNotInTheList ⇒ <code>boolean</code>
+
+Creates a boolean value after checking whether given book name is not in the array.
+If the book title is not in the array, it returns true. Otherwise, false.
+
+**Returns**: <code>boolean</code> - - Returns a boolean value of true/false.
+
+| Param         | Type               | Description                      |
+| ------------- | ------------------ | -------------------------------- |
+| arrayBookList | <code>Array</code> | The array of objects to inspect. |
+| toRemove      | <code>any</code>   | The value to check.              |
 
 </details>
 
 <details><summary><a href="../../client/src/logic/validityCheck.js" id="clientsrclogicvalidityCheckjs">../client/src/logic/validityCheck.js</a></summary>
+
+<a name="validityCheck"></a>
+
+## validityCheck ⇒ <code>boolean</code>
+
+Check whether given parameter have at least 2 characters after space characters are removed
+If parameter length is less than 2, it return true. Otherwise, false.
+
+**Returns**: <code>boolean</code> - - Returns a boolean value of true/false.
+
+| Param     | Type                | Description              |
+| --------- | ------------------- | ------------------------ |
+| userInput | <code>string</code> | The user input to check. |
 
 </details>
 
@@ -116,9 +142,5 @@
 # /styles
 
 ---
-
-<details><summary><a href="../../client/data.js" id="clientdatajs">../client/data.js</a></summary>
-
-</details>
 
 <!-- END DOCS -->
