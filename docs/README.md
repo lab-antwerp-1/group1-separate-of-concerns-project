@@ -29,6 +29,8 @@
     - [listenerLoad.js](#clientsrclistenerslistenerLoadjs)
     - [listenerRemove.js](#clientsrclistenerslistenerRemovejs)
   - logic
+    - [formatSentence.js](#clientsrclogicformatSentencejs)
+    - [formatWords.js](#clientsrclogicformatWordsjs)
     - [isBookNotInTheList.js](#clientsrclogicisBookNotInTheListjs)
     - [validityCheck.js](#clientsrclogicvalidityCheckjs)
   - [data.js](#clientsrcdatajs)
@@ -95,6 +97,44 @@
 ---
 
 ## /logic
+
+<details><summary><a href="../../client/src/logic/formatSentence.js" id="clientsrclogicformatSentencejs">../client/src/logic/formatSentence.js</a></summary>
+
+<a name="formatSentence"></a>
+
+## formatSentence ⇒ <code>string</code>
+
+Given a string input, the function will delete all space characters from the end and
+begin of the string. Then, if there are more than 1 space characters between
+words, it will delete all extra spaces. Lastly, it will make first letter of sentence
+uppercase.
+
+**Returns**: <code>string</code> - - Returns a formatted string.
+
+| Param     | Type                | Description           |
+| --------- | ------------------- | --------------------- |
+| userInput | <code>string</code> | The string to format. |
+
+</details>
+
+<details><summary><a href="../../client/src/logic/formatWords.js" id="clientsrclogicformatWordsjs">../client/src/logic/formatWords.js</a></summary>
+
+<a name="formatWords"></a>
+
+## formatWords ⇒ <code>string</code>
+
+Given a string input, the function will delete all space characters from the end and
+begin of the string. Then, if there are more than 1 space characters between
+words, it will delete all extra spaces. Lastly, it will make first letter of words
+uppercase and other letters lowercase.
+
+**Returns**: <code>string</code> - - Returns a formatted string.
+
+| Param     | Type                | Description           |
+| --------- | ------------------- | --------------------- |
+| userInput | <code>string</code> | The string to format. |
+
+</details>
 
 <details><summary><a href="../../client/src/logic/isBookNotInTheList.js" id="clientsrclogicisBookNotInTheListjs">../client/src/logic/isBookNotInTheList.js</a></summary>
 
