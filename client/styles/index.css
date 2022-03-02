@@ -298,3 +298,10 @@
   overflow-y: auto;
   max-height: 600px;
 }
+
+.row{
+ display: flex;
+}
+.col-6{
+ width:50%;
+}
