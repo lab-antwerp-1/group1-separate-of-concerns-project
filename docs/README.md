@@ -15,23 +15,26 @@
 <!-- BEGIN TOC -->
 
 - public
+  - assets
 - src
   - components
     - [render.js](#clientsrccomponentsrenderjs)
   - handlers
-    - [handlerAdd.js](#clientsrchandlershandlerAddjs)
-    - [handlerLoad.js](#clientsrchandlershandlerLoadjs)
-    - [handlerRemove.js](#clientsrchandlershandlerRemovejs)
+    - [handler-add.js](#clientsrchandlershandler-addjs)
+    - [handler-load.js](#clientsrchandlershandler-loadjs)
+    - [handler-remove.js](#clientsrchandlershandler-removejs)
+    - [handler-style.js](#clientsrchandlershandler-stylejs)
   - init
     - [index.js](#clientsrcinitindexjs)
   - listeners
-    - [listenerAdd.js](#clientsrclistenerslistenerAddjs)
-    - [listenerLoad.js](#clientsrclistenerslistenerLoadjs)
-    - [listenerRemove.js](#clientsrclistenerslistenerRemovejs)
+    - [listener-add.js](#clientsrclistenerslistener-addjs)
+    - [listener-load.js](#clientsrclistenerslistener-loadjs)
+    - [listener-remove.js](#clientsrclistenerslistener-removejs)
+    - [listener-style.js](#clientsrclistenerslistener-stylejs)
   - logic
-    - [formatSentence.js](#clientsrclogicformatSentencejs)
-    - [formatWords.js](#clientsrclogicformatWordsjs)
-    - [isBookNotInTheList.js](#clientsrclogicisBookNotInTheListjs)
+    - [format-sentence.js](#clientsrclogicformat-sentencejs)
+    - [format-words.js](#clientsrclogicformat-wordsjs)
+    - [is-book-not-in-the-list.js](#clientsrclogicis-book-not-in-the-listjs)
     - [validityCheck.js](#clientsrclogicvalidityCheckjs)
   - [data.js](#clientsrcdatajs)
 - styles
@@ -43,6 +46,10 @@
 <!-- BEGIN DOCS -->
 
 # /public
+
+## /assets
+
+---
 
 ---
 
@@ -58,15 +65,19 @@
 
 ## /handlers
 
-<details><summary><a href="../../client/src/handlers/handlerAdd.js" id="clientsrchandlershandlerAddjs">../client/src/handlers/handlerAdd.js</a></summary>
+<details><summary><a href="../../client/src/handlers/handler-add.js" id="clientsrchandlershandler-addjs">../client/src/handlers/handler-add.js</a></summary>
 
 </details>
 
-<details><summary><a href="../../client/src/handlers/handlerLoad.js" id="clientsrchandlershandlerLoadjs">../client/src/handlers/handlerLoad.js</a></summary>
+<details><summary><a href="../../client/src/handlers/handler-load.js" id="clientsrchandlershandler-loadjs">../client/src/handlers/handler-load.js</a></summary>
 
 </details>
 
-<details><summary><a href="../../client/src/handlers/handlerRemove.js" id="clientsrchandlershandlerRemovejs">../client/src/handlers/handlerRemove.js</a></summary>
+<details><summary><a href="../../client/src/handlers/handler-remove.js" id="clientsrchandlershandler-removejs">../client/src/handlers/handler-remove.js</a></summary>
+
+</details>
+
+<details><summary><a href="../../client/src/handlers/handler-style.js" id="clientsrchandlershandler-stylejs">../client/src/handlers/handler-style.js</a></summary>
 
 </details>
 
@@ -82,15 +93,19 @@
 
 ## /listeners
 
-<details><summary><a href="../../client/src/listeners/listenerAdd.js" id="clientsrclistenerslistenerAddjs">../client/src/listeners/listenerAdd.js</a></summary>
+<details><summary><a href="../../client/src/listeners/listener-add.js" id="clientsrclistenerslistener-addjs">../client/src/listeners/listener-add.js</a></summary>
 
 </details>
 
-<details><summary><a href="../../client/src/listeners/listenerLoad.js" id="clientsrclistenerslistenerLoadjs">../client/src/listeners/listenerLoad.js</a></summary>
+<details><summary><a href="../../client/src/listeners/listener-load.js" id="clientsrclistenerslistener-loadjs">../client/src/listeners/listener-load.js</a></summary>
 
 </details>
 
-<details><summary><a href="../../client/src/listeners/listenerRemove.js" id="clientsrclistenerslistenerRemovejs">../client/src/listeners/listenerRemove.js</a></summary>
+<details><summary><a href="../../client/src/listeners/listener-remove.js" id="clientsrclistenerslistener-removejs">../client/src/listeners/listener-remove.js</a></summary>
+
+</details>
+
+<details><summary><a href="../../client/src/listeners/listener-style.js" id="clientsrclistenerslistener-stylejs">../client/src/listeners/listener-style.js</a></summary>
 
 </details>
 
@@ -98,7 +113,7 @@
 
 ## /logic
 
-<details><summary><a href="../../client/src/logic/formatSentence.js" id="clientsrclogicformatSentencejs">../client/src/logic/formatSentence.js</a></summary>
+<details><summary><a href="../../client/src/logic/format-sentence.js" id="clientsrclogicformat-sentencejs">../client/src/logic/format-sentence.js</a></summary>
 
 <a name="formatSentence"></a>
 
@@ -117,7 +132,7 @@ uppercase.
 
 </details>
 
-<details><summary><a href="../../client/src/logic/formatWords.js" id="clientsrclogicformatWordsjs">../client/src/logic/formatWords.js</a></summary>
+<details><summary><a href="../../client/src/logic/format-words.js" id="clientsrclogicformat-wordsjs">../client/src/logic/format-words.js</a></summary>
 
 <a name="formatWords"></a>
 
@@ -136,7 +151,7 @@ uppercase and other letters lowercase.
 
 </details>
 
-<details><summary><a href="../../client/src/logic/isBookNotInTheList.js" id="clientsrclogicisBookNotInTheListjs">../client/src/logic/isBookNotInTheList.js</a></summary>
+<details><summary><a href="../../client/src/logic/is-book-not-in-the-list.js" id="clientsrclogicis-book-not-in-the-listjs">../client/src/logic/is-book-not-in-the-list.js</a></summary>
 
 <a name="isBookNotInTheList"></a>
 
