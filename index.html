@@ -8,19 +8,32 @@
 
     <link href="./client/styles/index.css" rel="stylesheet" />
   </head>
-  <body>
-    <div class="header common">
-      <h1>My Favorite Books</h1>
-      <h3>
-        <p>
-          Oh my lovely books are here... <br>
-          I can share them now with my friends <br>
-        </p>
-      </h3>
+  <body class="body-classic" id="body">
+    <div class="header common header-classic" id="header">
+      <div class="title">
+        <h1>My Favorite Books</h1>
+      </div>
+      <div class="subtitle">
+        <div class="option-list">
+          Style:  
+          <select id="style-type">
+            <option value="Classic">Classic</option>
+            <option value="Abstract">Abstract</option>
+            <option value="Green">Green</option>
+          </select>
+        </div>
+        <div id="sub-headline">
+          <h3><p>
+            Oh my lovely books are here... <br>
+            I can share them now with my friends <br>
+          </p></h3>
+        </div>
+      </div>
+      
     </div>
-    <div class="main common" id="root">
+    <div class="main common main-classic" id="root">
       <div class="add-remove-section">
-        <div class="section-add common" id="addBooks">
+        <div class="section-add-classic common" id="addBooks">
           <h4>Add your Favorite Books to your list</h4>
           <form action="">
               <label for="bookName">Book Title:</label><br>
@@ -29,26 +42,26 @@
               <input type="text" id="author" name="author" placeholder="Author"><br><br>
               <label for="summary">Summary:</label><br>
               <textarea id="summary" name="summary" placeholder="Short summary of the book" ></textarea><br>
-              <input type="button" class="btn" id="submitBtnAdd" value="Add to List">
+              <input type="button" class="button btn-classic" id="submitBtnAdd" value="Add to List">
               <p id="invalidEntryAdd"></p>
           </form>
         </div>
-        <div class="section-remove common" id="removeBooks">
+        <div class="section-remove-classic common" id="removeBooks">
           <form action="">
               <label for="bookNameRemove">Book Title:</label><br>
               <input type="text" id="bookNameRemove" name="bookNameRemove" placeholder="Book title">
               <br><br>
-              <input type="button" class="btn" id="submitBtnRemove" value="Remove">
+              <input type="button" class="btn-classic" id="submitBtnRemove" value="Remove">
               <p id="invalidEntryRemove"></p>
           </form>    
         </div>
       </div>
-      <div class="section-list-screen common" id="displayScreen">
+      <div class="section-list-screen common screen-classic" id="displayScreen">
 
       </div>
       
     </div>
-    <div class="footer common">
+    <div class="footer common footer-classic" id="footer">
       <h4>
         Developed by Mervat, Hans and Ömer<br>
         Copyright @2022
