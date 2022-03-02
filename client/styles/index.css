@@ -1,4 +1,5 @@
 @import url('./other-file.css');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Corinthia&family=Oleo+Script&display=swap');
 
 .body-classic {
   background-image: url('../public/assets/bg1.jpg');
@@ -291,4 +292,9 @@
   #description {
     width: 160px;
   }
+}
+
+#displayScreen {
+  overflow-y: auto;
+  max-height: 600px;
 }
