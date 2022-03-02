@@ -3,6 +3,7 @@
 .body-classic {
   background-image: url('../public/assets/bg1.jpg');
   background-size: cover;
+  font-style: italic;
 }
 
 .body-abstract {
