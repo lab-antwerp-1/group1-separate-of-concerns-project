@@ -299,9 +299,10 @@
   max-height: 600px;
 }
 
-.row{
+.row {
  display: flex;
 }
-.col-6{
- width:50%;
+
+.col-6 {
+ width: 50%;
 }
