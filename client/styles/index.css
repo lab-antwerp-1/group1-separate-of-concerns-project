@@ -300,9 +300,9 @@
 }
 
 .row {
- display: flex;
+  display: flex;
 }
 
 .col-6 {
- width: 50%;
+  width: 50%;
 }
