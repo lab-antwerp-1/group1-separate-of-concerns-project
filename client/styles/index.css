@@ -314,5 +314,8 @@ body{
 #img{
  height: 500px;
  width: 90%;
+ border-radius: 8px;
 }
+
+
 

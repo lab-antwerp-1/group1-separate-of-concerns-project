@@ -2,7 +2,7 @@
 export const renderList = (array = []) => {
   const ol = document.createElement('ol');
   for (const object of array) {
-    let randomImage = Math.floor((Math.random() * 3) + 0);
+    let randomImage = Math.floor((Math.random() * 4) + 0);
       console.log(randomImage);
     const li = document.createElement('li');
     li.innerHTML = `
