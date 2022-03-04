@@ -2,14 +2,15 @@
 export const renderList = (array = []) => {
   const ol = document.createElement('ol');
   for (const object of array) {
+    let randomImage = Math.floor((Math.random() * 3) + 0);
+      console.log(randomImage);
     const li = document.createElement('li');
     li.innerHTML = `
            <div class = row>
 
        <div class="col-6">
-               <h1>Book picture Here</h1>
+               <h1><img src="${object.image[randomImage]}" alt="" id = "img"></h1>
     </div>
-
     <div class="col-6">
     
     <div>
