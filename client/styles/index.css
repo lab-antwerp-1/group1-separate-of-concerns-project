@@ -1,7 +1,7 @@
 @import url('./other-file.css');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Corinthia&family=Oleo+Script&display=swap');
 
-body{
+body {
   overflow: hidden;
 }
 .body-classic {
@@ -312,8 +312,7 @@ body{
 }
 
 #img {
- height: 500px;
- width: 90%;
- border-radius: 8px;
+  height: 500px;
+  width: 90%;
+  border-radius: 8px;
 }
-
